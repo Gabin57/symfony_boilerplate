@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Burger {{ burger.id }}{% endblock %}
+
+{% block content %}
+	<h1>{{ burger.nom }}</h1>
+	<ul>
+		<li>ID: {{ burger.id }}</li>
+		<li>Prix: {{ burger.prix }} €</li>
+		<li>Description: {{ burger.description }}</li>
+	</ul>
+{% endblock %}
+
